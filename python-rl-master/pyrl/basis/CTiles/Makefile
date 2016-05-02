@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /u/maydas/RL_in_AI/python-rl-master/pyrl/basis/CTiles
+CMAKE_SOURCE_DIR = /nobackup/diviswan/workspace/rlproj/python-rl-master/pyrl/basis/CTiles
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /u/maydas/RL_in_AI/python-rl-master/pyrl/basis/CTiles
+CMAKE_BINARY_DIR = /nobackup/diviswan/workspace/rlproj/python-rl-master/pyrl/basis/CTiles
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /u/maydas/RL_in_AI/python-rl-master/pyrl/basis/CTiles/CMakeFiles /u/maydas/RL_in_AI/python-rl-master/pyrl/basis/CTiles/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/diviswan/workspace/rlproj/python-rl-master/pyrl/basis/CTiles/CMakeFiles /nobackup/diviswan/workspace/rlproj/python-rl-master/pyrl/basis/CTiles/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /u/maydas/RL_in_AI/python-rl-master/pyrl/basis/CTiles/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nobackup/diviswan/workspace/rlproj/python-rl-master/pyrl/basis/CTiles/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

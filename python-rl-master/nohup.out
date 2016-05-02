@@ -1,0 +1,16 @@
+pyrl/agents/sarsa_lambda.py:244: RuntimeWarning: overflow encountered in multiply
+  self.weights += self.rescale_update(phi_t, phi_tp, delta, reward, delta*self.traces)
+pyrl/agents/sarsa_lambda.py:244: RuntimeWarning: invalid value encountered in add
+  self.weights += self.rescale_update(phi_t, phi_tp, delta, reward, delta*self.traces)
+pyrl/agents/sarsa_lambda.py:244: RuntimeWarning: overflow encountered in multiply
+  self.weights += self.rescale_update(phi_t, phi_tp, delta, reward, delta*self.traces)
+pyrl/agents/sarsa_lambda.py:244: RuntimeWarning: overflow encountered in multiply
+  self.weights += self.rescale_update(phi_t, phi_tp, delta, reward, delta*self.traces)
+pyrl/agents/sarsa_lambda.py:244: RuntimeWarning: invalid value encountered in add
+  self.weights += self.rescale_update(phi_t, phi_tp, delta, reward, delta*self.traces)
+pyrl/agents/sarsa_lambda.py:244: RuntimeWarning: invalid value encountered in multiply
+  self.weights += self.rescale_update(phi_t, phi_tp, delta, reward, delta*self.traces)
+pyrl/agents/sarsa_lambda.py:244: RuntimeWarning: invalid value encountered in multiply
+  self.weights += self.rescale_update(phi_t, phi_tp, delta, reward, delta*self.traces)
+pyrl/agents/sarsa_lambda.py:244: RuntimeWarning: overflow encountered in multiply
+  self.weights += self.rescale_update(phi_t, phi_tp, delta, reward, delta*self.traces)

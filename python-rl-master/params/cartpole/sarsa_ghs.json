@@ -1,0 +1,12 @@
+{
+        "environment": {"params": {}, "name": "Cart Pole"},
+        "experiment": {"params": {"num_episodes": 50, "num_runs": 10}, "name": "Episodic"},
+        "agent": {"params": {
+                 "alpha": 1.0,
+                 "epsilon": 0.01,
+                 "gamma": 0.99,
+                 "lmbda": 0.9,
+                 "basis": "fourier",
+                 "fourier_order": 3
+        }, "name": "Adaptive (GHS) Sarsa"}
+}

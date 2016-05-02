@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/u/maydas/RL_in_AI/python-rl-master/pyrl/basis/CTiles/src/tiles.cpp
+/nobackup/diviswan/workspace/rlproj/python-rl-master/pyrl/basis/CTiles/src/tiles.cpp
 
-/u/maydas/RL_in_AI/python-rl-master/pyrl/basis/CTiles/src/tiles.h
+/nobackup/diviswan/workspace/rlproj/python-rl-master/pyrl/basis/CTiles/src/tiles.h
 
-/u/maydas/RL_in_AI/python-rl-master/pyrl/basis/CTiles/src/tilesInt.C
+/nobackup/diviswan/workspace/rlproj/python-rl-master/pyrl/basis/CTiles/src/tilesInt.C
 Python.h
 -
 tiles.h
-/u/maydas/RL_in_AI/python-rl-master/pyrl/basis/CTiles/src/tiles.h
+/nobackup/diviswan/workspace/rlproj/python-rl-master/pyrl/basis/CTiles/src/tiles.h
 
 /usr/include/python2.7/Python.h
 patchlevel.h

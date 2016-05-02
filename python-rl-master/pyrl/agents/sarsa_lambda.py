@@ -316,6 +316,8 @@ class fixed_policy(sarsa_lambda):
         pass
 
 ABSarsa = stepsizes.genAdaptiveAgent(stepsizes.AlphaBounds, sarsa_lambda)
+STCSarsa = stepsizes.genAdaptiveAgent(stepsizes.STC, sarsa_lambda)
+GHSSarsa = stepsizes.genAdaptiveAgent(stepsizes.GHS, sarsa_lambda)
 
 if __name__=="__main__":
     runAgent(sarsa_lambda)

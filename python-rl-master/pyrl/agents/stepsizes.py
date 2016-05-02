@@ -64,7 +64,7 @@ class GHS(AdaptiveStepSize):
     def init_stepsize(self, weights_shape, params):
         self.step_sizes = numpy.ones(weights_shape) * self.alpha
         self.last_update = numpy.zeros(weights_shape)
-        self.ghs_param = params.setdefault('ghs_a', 10.0)
+        self.ghs_param = params.setdefault('ghs_a', 1000.0)
         self.ghs_counter = 1
 
     def rescale_update(self, phi_t, phi_tp, delta, reward, descent_direction):
@@ -75,7 +75,7 @@ class GHS(AdaptiveStepSize):
     @classmethod
     def agent_parameters(cls):
         param_set = super(GHS, cls).agent_parameters()
-        add_parameter(param_set, "ghs_a", default=10., min=1., max=10000.)
+        add_parameter(param_set, "ghs_a", default=1000., min=1., max=10000.)
         return param_set
 
 class McClains(AdaptiveStepSize):
@@ -117,8 +117,8 @@ class STC(AdaptiveStepSize):
     def init_stepsize(self, weights_shape, params):
         self.step_sizes = numpy.ones(weights_shape) * self.alpha
         self.stc_a0 = self.alpha
-        self.stc_c = params.setdefault('stc_c', 1000000.0)
-        self.stc_N = params.setdefault('stc_N', 500000.0)
+        self.stc_c = params.setdefault('stc_c', 100.0)
+        self.stc_N = params.setdefault('stc_N', 1000.0)
         self.stc_counter = 0
 
     def rescale_update(self, phi_t, phi_tp, delta, reward, descent_direction):
@@ -131,8 +131,8 @@ class STC(AdaptiveStepSize):
     @classmethod
     def agent_parameters(cls):
         param_set = super(STC, cls).agent_parameters()
-        add_parameter(param_set, "stc_c", default=1000000.0, min=1., max=1.e10)
-        add_parameter(param_set, "stc_c", default=500000.0, min=1., max=1.e6)
+        add_parameter(param_set, "stc_c", default=100.0, min=1., max=1.e10)
+        add_parameter(param_set, "stc_N", default=1000.0, min=1., max=1.e6)
         return param_set
 
 
