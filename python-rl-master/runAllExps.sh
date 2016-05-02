@@ -1,8 +1,9 @@
 agents=(acrobot cartpole)
-methods=(stc ghs alphabound)
+methods=(alphabound stc ghs)
 alphas=(0.000001 0.00001 0.0001 0.001 0.01 0.1 1.0)
 runs=10
 episodes=50
+gamma=1.0
 
 for agent in "${agents[@]}"; do
 	for method in "${methods[@]}"; do
@@ -17,6 +18,11 @@ for agent in "${agents[@]}"; do
 		# Update number of episodes
 		old=$(grep -o "\"num_episodes\":[ ]*[0-9.]\+" $paramsFile)
 		new="\"num_episodes\": $episodes"
+		sed -i "s/$old/$new/g" $paramsFile
+
+		# Update gamma
+		old=$(grep -o "\"gamma\":[ ]*[0-9.]\+" $paramsFile)
+		new="\"gamma\": $gamma"
 		sed -i "s/$old/$new/g" $paramsFile
 
 		for alpha in "${alphas[@]}"; do

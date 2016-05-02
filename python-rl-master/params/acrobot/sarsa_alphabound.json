@@ -4,7 +4,7 @@
 	"agent": {"params": {
 		 "alpha": 1.0,
 		 "epsilon": 0.000001,
-		 "gamma": 0.99,
+		 "gamma": 1.0,
 		 "lmbda": 0.9,
 		 "basis": "fourier",
 		 "fourier_order": 3
